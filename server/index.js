@@ -15,10 +15,48 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 client.connect(err => {
     const restaurentCollection = client.db(`${process.env.DB_NAME}`).collection("foods");
      console.log("database connected" ,uri);
+
+     app.post('/addfood', (req, res) => {
+        const foodData = req.body;
+        restaurentCollection.insertOne(foodData) 
+        console.log(foodData);
+    })
+    
+        
+    app.get('/breakfastfoods', (req, res) => {
+        restaurentCollection.find({foodCat : "breakfast"})
+           .toArray((err, foods) => {
+               res.send(foods)
+           })
+          
+    }) 
+    app.get('/lunchfoods', (req, res) => {
+        restaurentCollection.find({ foodCat  :  "lunch" })
+           .toArray((err, foods) => {
+               res.send(foods)
+           })
+          
+    }) 
+        
+    app.get('/dinnerfoods', (req, res) => {
+        restaurentCollection.find({ foodCat : "dinner" })
+           .toArray((err, foods) => {
+               res.send(foods)
+           })
+          
+    }) 
+
+
+
+
+
+
+
+
+
 });
 
  
-
 
 
 

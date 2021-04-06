@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import './Diner.css'
+import DinerFood from '../DinerFood/DinerFood';
 
 const Diner = () => {
+
+    const [dinner, setDinner] = useState([])
+    
+    useEffect(() => {
+        fetch('http://localhost:5500/dinnerfoods')
+            .then(res => res.json())
+            .then(data => {
+                setDinner(data)
+            })
+    }, [])
+
+
     return (
-        <div>
-            <h1>Diner component</h1>
+        <div className="container "> 
+            <div className="dinnerFoods  mt-3 p-3">       
+                    {
+                        dinner.map(food => <DinerFood key={food._id} food={food} />)
+                    } 
+            </div>
         </div>
     );
 };

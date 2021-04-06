@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './LunchFood.css'
 
-const BreakfastFood = ({ food }) => {
+const LunchFood = ({food}) => {
+
     const { foodName, foodPrice, imageURL, foodDetails } = food;
     return (
         <div>
@@ -20,4 +22,4 @@ const BreakfastFood = ({ food }) => {
     );
 };
 
-export default BreakfastFood;
+export default LunchFood;

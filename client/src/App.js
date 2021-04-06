@@ -11,6 +11,8 @@ import Breakfast from './components/Breakfast/Breakfast';
 import Lunch from './components/Lunch/Lunch';
 import Diner from './components/Diner/Diner';
 import Admin from './components/Admin/Admin';
+import Foodsadded from './components/Foodsadded/Foodsadded';
+import Header from './components/Header/Header';
 function App() {
   return (
     <div className="App">
@@ -30,21 +32,28 @@ function App() {
 
           </Route>
           <Route path="/breakfast">
-            <Home />
+            <Header />
             <Breakfast />
+            <Home />
           </Route>
           <Route path="/lunch">
-            <Home />
+            <Header />
             <Lunch />
+            <Home />
           </Route>
           <Route path="/diner">
-            <Home />
+            <Header />
             <Diner />
+            {/* <Home /> */}
           </Route>
           <Route path="/admin">
-              <Admin />
+            <Admin />
+          </Route>
+          <Route path="/addfoods">
+            <Foodsadded />
           </Route>
           <Route path="/">
+            <Header />
             <Home />
           </Route>
         </Switch>
