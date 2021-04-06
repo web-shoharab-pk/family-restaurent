@@ -1,0 +1,24 @@
+body{
+    background-color: beige;
+}
+.navbar-nav{
+    position: absolute;
+    right: 10px;
+}
+.headerDiv{
+    background-image: url('../images/BANNER-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    width: 100%;
+    height: 50vh;
+}
+.searchBar{ 
+    border: 5px solid khaki;
+    background-color: khaki;
+    border-radius:  50px;
+}
+.searchField, .searchBtn {
+    border: none;
+ 
+}
