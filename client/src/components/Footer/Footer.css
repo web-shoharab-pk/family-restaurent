@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.links a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.links a:hover{
+    text-decoration: underline;
+}

@@ -11,7 +11,7 @@ const Foodsadded = () => {
 
     console.log(imageURL);
     const onSubmit = data => {
-
+        console.log(data);
         const addFoodDetails = {
             foodName: data.name,
             foodDetails: data.description,
@@ -21,7 +21,7 @@ const Foodsadded = () => {
         }
         console.log(addFoodDetails);
 
-        const postURL = 'http://localhost:5500/addfood';
+        const postURL = 'https://blooming-reaches-15120.herokuapp.com/addfood';
         fetch(postURL, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

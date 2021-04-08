@@ -13,6 +13,15 @@ body{
 .signup{
     background-color: red;
     color: white !important;
+    border-radius: 25px;
+}
+.nav-item:hover{
+    background-color: none !important;
+    color: gray !important;
+}
+.userImag img{ 
+    width: 80px;
+    border-radius: 50%;
 }
 .categories{
     margin-top:  1rem;

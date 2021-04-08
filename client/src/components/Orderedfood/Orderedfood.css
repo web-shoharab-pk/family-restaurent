@@ -1,0 +1,5 @@
+.orderDetails{
+    border: 3px solid gray;
+    overflow-x: scroll;
+    background-color: white;
+}
