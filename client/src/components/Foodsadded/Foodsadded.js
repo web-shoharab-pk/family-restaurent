@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
-import './Foodsadded.css'
+import './Foodsadded.css';
 
 const Foodsadded = () => {
     const { register, handleSubmit } = useForm();

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { DetailsContext } from '../../App';
-import './LunchFood.css'
+import './LunchFood.css';
 
 const LunchFood = ({ food }) => {
 

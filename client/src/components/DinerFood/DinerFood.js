@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { DetailsContext } from '../../App';
-import './DinerFood.css'
+import './DinerFood.css';
 
 const DinerFood = ({ food }) => {
     const { foodName, foodPrice, imageURL, foodDetails, _id } = food;
