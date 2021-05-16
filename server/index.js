@@ -81,7 +81,12 @@ client.connect(err => {
           
     }) 
 
+    app.delete('/deletefoodByid/:id', (req, res) => {
 
+        restaurentCollection.deleteOne({ _id: ObjectID(req.params.id) })
+        console.log(res.send());
+        
+    })
 
 
 

@@ -65,23 +65,23 @@ const Foodsadded = () => {
                     <form className="w-100 p-3" onSubmit={handleSubmit(onSubmit)} >
                         <Link to="/admin"><h1>Admin</h1> </Link>
                         <p style={{textAlign: 'left'}}>Food Name</p> 
-                        <input className="form-control w-100" defaultValue="name" {...register('name')} />
+                        <input className="form-control w-100" defaultValue="name" required {...register('name')} />
                         <br />
                         <p style={{textAlign: 'left'}}>Food Details</p> 
-                        <input className="form-control" defaultValue="description" {...register('description')} />
+                        <input className="form-control" defaultValue="description" required  {...register('description')} />
                         <br />
                         <p style={{textAlign: 'left'}}>Food Price</p> 
-                        <input className="form-control" defaultValue="price" {...register('price')} />
+                        <input className="form-control" defaultValue="price" required  {...register('price')} />
                         <br />
                         <p style={{textAlign: 'left'}}>Select Food  Category</p> 
-                        <select className="form-control"  {...register("categories")}>
+                        <select className="form-control"  required   {...register("categories")}>
                             <option value="breakfast">Break Fast</option>
                             <option value="lunch">Lunch</option>
                             <option value="dinner">Dinner</option>
                         </select>
                         <br />
                         <p style={{textAlign: 'left'}}>Upload Food Image</p> 
-                        <input style={{ width: '100%' }} name="photo" className="form-control" onChange={handleImageUpload} type="file" required />
+                        <input style={{ width: '100%' }} name="photo" className="form-control"   onChange={handleImageUpload} type="file" required />
                         <br />
                         <input className=" btn btn-success w-100" type="submit" />
                     </form>

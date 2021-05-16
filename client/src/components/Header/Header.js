@@ -57,10 +57,7 @@ const Header = () => {
                                     <Link className="nav-link active bg-secondary text-light rounded px-5 " aria-current="page" to="/admin">Admin</Link>
                                 </li>
                             </ul>
-                            {/* <form class="d-flex ">
-                                <input class="form-control me-2  px-5" type="search" placeholder="Search" aria-label="Search" />
-                                <button class="btn btn-success " type="submit">Search</button>
-                            </form> */}
+                             
                         </div>
                     </div>
                 </nav>
