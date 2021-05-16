@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import deleteLogo from '../icons/deletelogo.png';
-import editLogo from '../icons/edit.png';
+import deleteLogo from '../icons/deletelogo.png'; 
 import Sidebar from '../Sidebar/Sidebar';
 import './Admin.css';
 
@@ -23,7 +22,7 @@ const Admin = () => {
 
     const deleteFood = (id) => {
         console.log(id);
-        fetch(`http://localhost:5500/deletefoodByid/${id}`, {
+        fetch(`https://blooming-reaches-15120.herokuapp.com/deletefoodByid/${id}`, {
             method: 'DELETE',
 
         })
